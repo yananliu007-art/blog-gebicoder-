@@ -1,0 +1,64 @@
+baseURL = 'https://yananliu007-art.github.io/'
+languageCode = 'zh-cn'
+title = '戈壁与代码'
+theme = "stack"
+defaultContentLanguage = "zh-cn"
+
+[module]
+  [[module.imports]]
+    path = "github.com/CaiJimmy/hugo-theme-stack/v3"
+
+[params]
+  mainSections = ["posts"]
+  featuredImageField = "image"
+  timezone = "Asia/Shanghai"
+  
+  [params.sectionPages]
+    enable = true
+
+  [params.pagination]
+    enable = true
+    pagerSize = 6
+
+  [params.sidebar]
+    enable = false
+
+  [params.widgets]
+    enable = false
+
+  [params.assets]
+    favicon = "/images/favicon.ico"
+    customCSS = []
+
+  [params.opengraph]
+    twitter = ""
+
+  [params.analytics]
+    google = ""
+    plausible = ""
+    cloudflare = ""
+    baidu = ""
+
+  [params.comment]
+    enable = false
+
+  [params.search]
+    enable = true
+
+  [params.cookieconsent]
+    enable = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWRaps = false
+      unsafe = true
+      xhtml = false
+
+[build]
+  writeStats = false
